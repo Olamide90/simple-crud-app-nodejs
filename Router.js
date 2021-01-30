@@ -10,7 +10,7 @@ router.get('/movies', (req, res)=>{
     res.status(200).send(Database)
 })
 
-/******  Read aSTARTS HERE ****************** */
+
 // get a specific movie
 router.get('/movies/:id', (req, res)=>{
     const {id} =  req.params
@@ -24,9 +24,8 @@ router.get('/movies/:id', (req, res)=>{
         console.log(err)
     }
 })
-/******  UPDATE ENDS HERE ****************** */
 
-/******  POST  STARTS HERE ****************** */
+
 // route to post movies to database
 router.post('/newmovie', (req, res)=>{
 
